@@ -1,0 +1,253 @@
+*{
+    margin: 0; padding: 0; outline: 0; box-sizing: border-box;
+}
+ul{list-style: none;}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
+
+/* header area */
+header#header-area {
+    background: rgba(0,0,0,.8);
+    padding: 20px 0;
+}
+#header-area {
+    position: fixed;
+    width: 100%;
+}
+
+nav.menu-area ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* slider area */
+section#slider-area{
+    background:url(../images/background.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.slide-content-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.slide-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.slide-content.text-white {
+    color: #fff;
+    text-align: center;
+}
+.slide-content h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.slide-content p {
+    margin-bottom: 40px;
+}
+
+.slide-content a.slide-btn {
+    display: inline-block;
+    color: #fff;
+    background: orangered;
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 45px;
+    font-weight: bold;
+    box-shadow: inset 5px 6px 7px orange, inset  -5px -6px 7px orange;
+    transition: all 1s ease-out;
+}
+
+/* about area */
+section#about-area {
+    background: #DCE7E5;
+    text-align: center;
+    padding: 50px 60px;
+}
+
+.about-heading {
+    margin-bottom: 50px;
+}
+.about-left {
+    flex-basis: 30%;
+}
+.about-heading h3 {
+    font-size: 33px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-content .about-right {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.about-right h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.about-right p {
+    width: 80%;
+}
+.about-right {
+    flex: 1;
+}
+
+/* service area */
+.service-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.wrapper {
+    width: 91%;
+    margin: 0 auto;
+}
+.service-title h3 {
+    color: #000;
+}
+section#service-area {
+    padding: 80px 0;
+    background: #ddd;
+}
+.service-icon a img {
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+}
+.single-service {
+    text-align: center;
+    border: 2px solid orangered;
+    padding: 20px 30px 51px 30px;
+    margin-right: 15px;
+    transition: all 1s ease-in-out;
+}
+.service-content h3 {
+    margin-bottom: 18px;
+}
+.service-title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.service-title h3 {
+    font-size: 30px;
+}
+/*================= contact area===================== */
+.contact-area {
+    padding: 80px 0;
+    background: #eee;
+}
+.contact-title {
+    text-align: center;
+  }
+  .contact-title h3 {
+    font-size: 30px;
+  }
+  .contact-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+  }
+  .single-contact-icon {
+    display: flex;
+    align-items: center;
+    box-shadow: inset 20px 13px 13px #f9f6f6, inset -20px -13px 13px #f9f6f6;
+    padding: 35px 30px;
+    border-radius: 0 30px;
+    flex-basis: 32%;
+margin-right: 15px;
+  }
+  .single-contact-icon i {
+    font-size: 23px;
+    margin-right: 12px;
+    color: orangered;
+    background: palegoldenrod;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+  }
+
+  .single-contact-icon span {
+    display: block;
+}
+
+
+
+form input,textarea {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 12px;
+    border: 0;
+  }
+  .contact-form {
+    width: 70%;
+    margin: 58px auto;
+  }
+  input.btn-submit {
+    background: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: orangered;
+}
+/*=============footer ==================*/
+
+.footer-right nav ul li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #000;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+  .footer-right nav ul li a {
+    display: block;
+  }
+  .footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #footer-area {
+    padding: 15px 0;
+    background: #ccc;
+  }
+
+  /* toggle menu */
+.collapse-bar {
+    display: none;
+}
+.menu-area ul.show{
+   left: 0;
+}

@@ -1,0 +1,68 @@
+/* XL Device 1200px. */
+
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {}
+
+
+/* LG Device: 992px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+
+/* MD Device: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+
+/* XS Device */
+
+@media only screen and (max-width: 767px) {
+    nav.menu-area ul {
+        flex-direction: column;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .about-content .about-right {
+         margin-left: 0px; 
+    }
+    .about-right p {
+        width: 100%;
+    }
+    .service-wrapper {
+        flex-direction: column;
+    }
+    .single-service {
+        margin-bottom: 15px;
+    }
+    .contact-icon {
+        flex-direction: column;
+    }
+    .single-contact-icon {
+        margin-bottom: 20px;
+    }
+    .footer-wrap {
+        flex-direction: column;
+    }
+    .footer-left {
+        margin-bottom: 16px;
+    }
+    .slide-content h1 {
+        font-size: 30px;
+    }
+
+    /* toggle menu*/
+    .collapse-bar {
+        display: block;
+        text-align: right;
+        width: 10%;
+        margin-right: 20px;
+        margin-left: auto;
+      }
+      .collapse-bar i {
+        color: #fff;
+        cursor: pointer;
+    }
+      .menu-area {
+        display: none;
+      }
+}
